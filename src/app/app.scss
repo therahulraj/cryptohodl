@@ -1,0 +1,337 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700');
+
+// $font-family-base: "ubuntu";
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.toolbar-title-md {
+  font-size: 15px;
+}
+.toolbar-title-ios {
+  font-size: 15px;
+}
+.tabs-md .tabbar {
+  background-color: #1e1e35;
+}
+.tabs-ios .tabbar {
+  background-color: #1e1e35;
+}
+.tabs-ios .tabbar {
+  background-color: #1e1e35;
+}
+.tabs-md .tab-button {
+  color: #fff;
+}
+.tabs-ios .tab-button {
+  color: #fff;
+}
+.tabs-md .tab-button-text {
+  font-size: 1.4rem;
+}
+.tabs-ios .tab-button-text {
+  font-size: 1.4rem;
+}
+.tabs-md .tab-button[aria-selected=true] {
+  border-top: 1.5px solid #53a4ff;
+}
+.tabs-ios .tab-button[aria-selected=true] {
+  border-top: 1.5px solid #53a4ff;
+}
+.navbar-padding {
+  padding: 8px 0;
+  padding-left: 20px;
+  font-size: 14px;
+}
+.label-grid{
+  padding: 0 10px;
+}
+.label-show {
+  // height: 23px;
+  margin-top: 20px;
+  font-size: 10px;
+  padding: 5px 8px;
+  color: #fff;
+  background-color: #1e1e35;
+  border-radius: 4px;
+}
+.label-next-button {
+  width: 30px;
+  // height: 12px;
+  padding: 4px 0 4px 0;
+  border-radius: 4px;
+  // padding: 6px 16px;
+  background-image: linear-gradient(to right, #1f60ad, #53a4ff);
+}
+.label-next-button img {
+  width: 14px;
+  height: 7px;
+}
+.label-special {
+  color:  #53a4ff;
+  border-bottom: 1px solid #53a4ff;
+  padding-bottom: 4px;
+}
+.list-info {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 10px;
+  font-weight: 700;
+  color: #595676;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #18192E;
+}
+.list-info img {
+  width: 5px;
+}
+.general-item {
+  padding: 14px 0;
+  // border: 1px solid #53a4ff;
+}
+.general-item {
+  font-size: 12px;
+}
+.coin-name-text{ 
+  color: #53a4ff;
+}
+.coin-price-text {
+  color: #fff;
+}
+.date-search-text {
+  color: #fff;
+  // padding-left: 12px;
+}
+.coin-name-small-text {
+  font-size: 12px;
+}
+.label-border {
+  // background-color: #1e1e35;
+  border-top: 1px solid #0f0f26;
+  border-bottom: 1px solid #0f0f26;
+}
+.label-bottom-border {
+  // background-color: #1e1e35;
+  // border-top: 1px solid #0f0f26;
+  border-bottom: 1px solid #0f0f26;
+}
+.label-top-border {
+  // background-color: #1e1e35;
+  // border-top: 1px solid #0f0f26;
+  border-top: 1px solid #0f0f26;
+}
+.text-input-md {
+  margin: 0px;
+}
+.label-special input::placeholder {
+  color: #53a4ff;
+}
+.smaller-label-text {
+  font-size: 11px;
+}
+.next-arrow-img {
+  // padding: 3px;
+  margin-left: 5px;
+  background-color: #1e1e35;
+}
+.next-arrow {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  // flex-direction: row;
+}
+.next-arrow div:nth-child(2) {
+  border-radius: 2px;
+  background-color: #1e1e35;
+  padding: 5px;
+}
+// .next-arrow span {
+//   // padding: 3px;
+//   width: 8px;
+//   height: 8px;
+// }
+.filter-img div {
+  padding: 6px 0px;
+  margin: 5px 0;
+  width: 26px;
+  border-radius: 2px;
+  background-image: linear-gradient(to right, #1f60ad, #53a4ff);
+}
+.filter-img img {
+  width: 12px;
+  height: 12px;
+}
+.tabs-duration {
+  display: inline;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 11px;
+  padding: 5px 8px;
+}
+.tabs-duration-active {
+  background-image: linear-gradient(to right, #1f60ad, #53a4ff);
+}
+.tab-grid {
+  margin-top: 30px;
+}
+.alert-md {
+  background-color: none;
+}
+// $alert-md-background-color : #808080;
+.alert-wrapper {
+  background-color: #0f0f26;
+}
+.my-modal-dropdown {
+  // text-align: center;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(15, 15, 38, .4);
+  // opacity: .5;
+}
+
+  .my-modal {
+    padding: 10px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    height: 75%;
+    // top: 15%;
+    margin: 0 auto;
+    background-color: #0f0f26;
+    border-radius: 5px;
+  }
+  .my-fields {
+    width: 100%;
+    max-height: 70%;
+    overflow: auto;
+  }
+  .my-fields-filter {
+    height: auto;
+  }
+.my-modal-header {
+  // position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  // margin: 0 15px;
+} 
+.my-modal-header img {
+  width: 14px;
+}
+.my-modal-header-text {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 10px;
+}
+.my-modal-header{ 
+  padding: 20px 0;
+  border-bottom: .3px solid #fff;
+}
+.my-modal-header-text > span {
+  font-size: 12px;
+  color: #8F3161;
+}
+.my-modal-header-text > span > span {
+  color: #fff;
+}
+.my-option {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px 0 20px 10px;
+  
+}
+.my-checkbox {
+  height: 10px;
+  width: 10px;
+  border-radius: 2px;
+  background-color: #fff;
+}
+.my-field-text{ 
+  width: 80%;
+  max-height: 75%;
+  color: #fff;
+  font-size: 13px;
+  margin-left: 10px;
+}
+.select-button {
+
+  bottom: 0;
+  margin: 10px 0;
+}
+.select-button button {
+  color: #fff;
+  font-size: 16px;
+  width: 150px;
+  height: 35px;
+  border-radius: 4px;
+  background-image: linear-gradient(to right, #1f60ad, #53a4ff);
+}
+.my-option-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px;
+}
+.my-option-heading-main {
+  color: #fff;
+}
+.my-option-heading-clear{ 
+  color: #1f60ad;
+}
+.my-filter-inputs {
+  margin: 30px 0;
+  font-size: 13px;
+}
+.input-row {
+  margin-top: 5px;
+}
+.image-enter {
+  padding: 2px;
+  background-image: linear-gradient(to right, #1f60ad, #53a4ff);
+  border-radius: 3px;
+}
+.image-enter img { 
+  width: 16px;
+}
+.text-input-ios {
+   margin: 0px; 
+}
+.my-nav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+}
+.my-nav img {
+   width: 30px;
+}
+.toolbar-ios ion-title {
+  top: 10px;
+   padding: 20px 0 10px 20px;
+}
+.my-nav div {
+   padding: 0 7px;
+}

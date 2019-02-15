@@ -1,0 +1,113 @@
+<!--
+  Generated template for the FilterPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar color="background-none">
+      <ion-title>filter</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content>
+  
+      <div class="my-modal-dropdown">
+          <div class="my-modal my-fields-filter">
+              <div class="my-modal-header">
+                <div class="my-modal-header-text">Filters</div>
+                <div (click)="dismissFilterCalendarModal()"><img src="../../assets/imgs/close.png" alt=""></div>
+              </div>
+              <div class="my-fields">
+                <div class="my-filter-inputs">
+                  <div class="my-option-heading">
+                    <div class="my-option-heading-main">Change Since</div>
+                    <div class="my-option-heading-clear">Clear</div>
+                  </div>
+                  <div class="input-row">
+                      <ion-grid>
+                          <ion-row align-items-center>
+                            <ion-col col-5>
+                                <div text-center class="label-special">
+                                    <ion-input class="label-special-input" type="text" placeholder="from">
+                                      </ion-input>
+                                </div>
+                            </ion-col>
+                            <ion-col col-5>
+                                <div text-center class="label-special">
+                                    <ion-input class="label-special-input" type="text" placeholder="to">
+                                      </ion-input>
+                                </div>
+                            </ion-col>
+                            <ion-col col-2>
+                              <div text-center class="image-enter">
+                                  <img src="../../assets/imgs/enter-filter.png" alt="">
+                              </div>
+                            </ion-col>
+                          </ion-row>
+                        </ion-grid>
+                  </div>
+                </div>
+
+                  <div class="my-filter-inputs">
+                      <div class="my-option-heading">
+                        <div class="my-option-heading-main">Marketcap ( in $ )</div>
+                        <div class="my-option-heading-clear">Clear</div>
+                      </div>
+                      <div class="input-row">
+                          <ion-grid>
+                              <ion-row align-items-center>
+                                <ion-col col-5>
+                                    <div text-center class="label-special">
+                                        <ion-input class="label-special-input" type="text" placeholder="from">
+                                          </ion-input>
+                                    </div>
+                                </ion-col>
+                                <ion-col col-5>
+                                    <div text-center class="label-special">
+                                        <ion-input class="label-special-input" type="text" placeholder="to">
+                                          </ion-input>
+                                    </div>
+                                </ion-col>
+                                <ion-col col-2>
+                                  <div text-center class="image-enter">
+                                      <img src="../../assets/imgs/enter-filter.png" alt="">
+                                  </div>
+                                </ion-col>
+                              </ion-row>
+                            </ion-grid>
+                      </div>
+                  </div>
+
+                  <div class="my-filter-inputs">
+                      <div class="my-option-heading">
+                        <div class="my-option-heading-main">Day Change</div>
+                        <div class="my-option-heading-clear">Clear</div>
+                      </div>
+                      <div class="input-row">
+                          <ion-grid>
+                              <ion-row align-items-center>
+                                <ion-col col-10>
+                                    <div text-center class="label-special">
+                                        <ion-input class="label-special-input" type="text" placeholder="Enter Number of Days">
+                                          </ion-input>
+                                    </div>
+                                </ion-col>
+                                <ion-col col-2>
+                                  <div text-center class="image-enter">
+                                      <img src="../../assets/imgs/enter-filter.png" alt="">
+                                  </div>
+                                </ion-col>
+                              </ion-row>
+                            </ion-grid>
+                      </div>
+                  </div>
+
+              </div>
+
+
+            </div>
+  
+        </div>
+  </ion-content>
+  

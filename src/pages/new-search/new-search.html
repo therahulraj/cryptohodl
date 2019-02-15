@@ -1,0 +1,238 @@
+<ion-header>
+    <ion-navbar class="navbar-padding" color="custom-light-primary">
+      <ion-title>
+        <ion-grid>
+          <ion-row align-items-center>
+            <ion-col col-1><img src="../../assets/imgs/cryptohodl-brand.png" alt=""></ion-col>
+            <ion-col col-11 center>  Cryptohodl.in</ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content color="custom-light-primary" class="custom-content">
+  
+    <ion-grid class="label-grid">
+      <ion-row align-items-center no-padding justify-content-between class="label-show">
+        <ion-col col-3>
+          <div text-center class="label-special">
+              <ion-input class="label-special-input" type="text" placeholder="coin name"></ion-input>
+          </div>
+        </ion-col>
+        <ion-col col-4>
+          <div text-center>
+            price change since
+          </div>
+        </ion-col>
+        <ion-col col-2>
+          <div text-center class="label-special">
+              <ion-input class="label-special-input" type="text" placeholder="price">
+                </ion-input>
+          </div>
+        </ion-col>
+        <ion-col col-2>
+         <div text-center class="label-next-button">
+           <img align-self-center src="../../assets/imgs/right-arrow.png" alt="">
+         </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  
+    <ion-grid>
+      <ion-row align-items-center justify-content-end>
+        <ion-col col-2 class="filter-img" (click)="filterResultsPresent()">
+            <div text-center>
+              <img src="../../assets/imgs/filter.png" alt="">
+            </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-grid class="label-grid label-bottom-border">
+        <ion-row align-items-center justify-content-between class="list-info" no-padding>
+          <ion-col col-2 no-padding>
+            <div text-start>
+              COIN
+            </div>
+          </ion-col>
+          <ion-col col-2 no-padding>
+            <div text-start>
+              PRICE&nbsp;<img src="../../assets/imgs/up-down-arrow.png" alt="">
+            </div>
+          </ion-col>
+          <ion-col col-4 no-padding>
+              <div text-start>
+                MARKET CAP&nbsp;<img src="../../assets/imgs/up-down-arrow.png" alt="">
+              </div>
+            </ion-col>
+          <ion-col col-4 no-padding>
+            <div text-start class="next-arrow">
+              <div>
+                1 DAY CHANGE&nbsp;
+                <img src="../../assets/imgs/up-down-arrow.png" alt="">
+              </div>
+              <div (click)="chooseFieldsPresent()">
+                  <img item- src="../../assets/imgs/next-icon.png" alt="">
+            </div>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+  
+  
+    <ion-list>
+        
+          <ion-grid class="label-grid">
+            <ion-row align-items-center justify-content-between  class="general-item">
+              <ion-col col-2 no-padding>
+                  <div text-start class="coin-name-text smaller-label-text">
+                      BTC
+                  </div>
+              </ion-col>
+              <ion-col col-2 no-padding>
+                  <div text-start class="coin-name-text smaller-label-text">
+                      $ 3605
+                  </div>
+              </ion-col>
+              <ion-col col-4 no-padding>
+                  <div text-start class="coin-price-text smaller-label-text">
+                    $ 63,560,146.43
+                  </div>
+              </ion-col>
+              <ion-col col-4 no-padding>
+               <div text-start class="coin-price-text smaller-label-text">
+                 1.69%
+               </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        
+          <ion-grid class="label-grid label-border">
+              <ion-row align-items-center justify-content-between  class="general-item">
+                <ion-col col-2 no-padding>
+                    <div text-start class="coin-name-text smaller-label-text">
+                        BTC
+                    </div>
+                </ion-col>
+                <ion-col col-2 no-padding>
+                    <div text-start class="coin-name-text smaller-label-text">
+                        $ 3605
+                    </div>
+                </ion-col>
+                <ion-col col-4 no-padding>
+                    <div text-start class="coin-price-text smaller-label-text">
+                      $ 63,560,146.43
+                    </div>
+                </ion-col>
+                <ion-col col-4 no-padding>
+                 <div text-start class="coin-price-text smaller-label-text">
+                   1.69%
+                 </div>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+        
+            <ion-grid class="label-grid label-border">
+                <ion-row align-items-center justify-content-between  class="general-item">
+                  <ion-col col-2 no-padding>
+                      <div text-start class="coin-name-text smaller-label-text">
+                          BTC
+                      </div>
+                  </ion-col>
+                  <ion-col col-2 no-padding>
+                      <div text-start class="coin-name-text smaller-label-text">
+                          $ 3605
+                      </div>
+                  </ion-col>
+                  <ion-col col-4 no-padding>
+                      <div text-start class="coin-price-text smaller-label-text">
+                        $ 63,560,146.43
+                      </div>
+                  </ion-col>
+                  <ion-col col-4 no-padding>
+                   <div text-start class="coin-price-text smaller-label-text">
+                     1.69%
+                   </div>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+        
+              <ion-grid class="label-grid label-border">
+                  <ion-row align-items-center justify-content-between  class="general-item">
+                    <ion-col col-2 no-padding>
+                        <div text-start class="coin-name-text smaller-label-text">
+                            BTC
+                        </div>
+                    </ion-col>
+                    <ion-col col-2 no-padding>
+                        <div text-start class="coin-name-text smaller-label-text">
+                            $ 3605
+                        </div>
+                    </ion-col>
+                    <ion-col col-4 no-padding>
+                        <div text-start class="coin-price-text smaller-label-text">
+                          $ 63,560,146.43
+                        </div>
+                    </ion-col>
+                    <ion-col col-4 no-padding>
+                     <div text-start class="coin-price-text smaller-label-text">
+                       1.69%
+                     </div>
+                    </ion-col>
+                  </ion-row>
+                </ion-grid>
+        
+                <ion-grid class="label-grid label-border">
+                    <ion-row align-items-center justify-content-between  class="general-item">
+                      <ion-col col-2 no-padding>
+                          <div text-start class="coin-name-text smaller-label-text">
+                              BTC
+                          </div>
+                      </ion-col>
+                      <ion-col col-2 no-padding>
+                          <div text-start class="coin-name-text smaller-label-text">
+                              $ 3605
+                          </div>
+                      </ion-col>
+                      <ion-col col-4 no-padding>
+                          <div text-start class="coin-price-text smaller-label-text">
+                            $ 63,560,146.43
+                          </div>
+                      </ion-col>
+                      <ion-col col-4 no-padding>
+                       <div text-start class="coin-price-text smaller-label-text">
+                         1.69%
+                       </div>
+                      </ion-col>
+                    </ion-row>
+                  </ion-grid>
+        
+                  <ion-grid class="label-grid label-top-border">
+                      <ion-row align-items-center justify-content-between  class="general-item">
+                        <ion-col col-2 no-padding>
+                            <div text-start class="coin-name-text smaller-label-text">
+                                BTC
+                            </div>
+                        </ion-col>
+                        <ion-col col-2 no-padding>
+                            <div text-start class="coin-name-text smaller-label-text">
+                                $ 3605
+                            </div>
+                        </ion-col>
+                        <ion-col col-4 no-padding>
+                            <div text-start class="coin-price-text smaller-label-text">
+                              $ 63,560,146.43
+                            </div>
+                        </ion-col>
+                        <ion-col col-4 no-padding>
+                         <div text-start class="coin-price-text smaller-label-text">
+                           1.69%
+                         </div>
+                        </ion-col>
+                      </ion-row>
+                    </ion-grid>
+    </ion-list>
+  
+  </ion-content>
+  

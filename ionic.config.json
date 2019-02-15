@@ -1,0 +1,7 @@
+{
+  "name": "cryptohodl",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
